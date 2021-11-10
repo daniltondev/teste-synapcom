@@ -14,6 +14,7 @@ html {
   --footer-backgroud-grey: #efefef;
   --newsletter-color-text: #1e95ce;
   --border-footer-blue: #1e95ce;
+  --color-price-blue: #0089c8;
   width: 100vw;
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -183,13 +184,50 @@ fieldset .busca {
   width: 100vw;
 }
 
+.banner-carrossel .slick-dots {
+  bottom: 10px !important;
+}
+
+.banner-carrossel .slick-prev {
+  z-index: 9998;
+  left: 20px !important;
+}
+
+.banner-carrossel .slick-next {
+  right: 20px;
+}
+
 /*BARRA DE BENEFICIOS*/
 
 .benefits-bar {
-  background-color: #555;
+  display: block;
+  background-color: #fff;
   width: 100%;
   height: 62px;
   margin-bottom: 1rem;
+}
+
+.benefits-bar-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.benefits-bar-list article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-bar-list article p {
+  text-transform: uppercase;
+  line-height: 19px;
+  font-size: 12px;
+}
+
+.benefits-bar-list img {
+  width: 45px;
+  margin-right: 20px;
 }
 
 /*BANNER FOUR*/
@@ -210,6 +248,7 @@ fieldset .busca {
 }
 
 /* LANCAMENTOS*/
+
 .smarthint-news {
   text-align: center;
 }
@@ -217,6 +256,7 @@ fieldset .busca {
 .smarthint-news h3 {
   margin-top: 5rem;
   margin-bottom: 4rem;
+  color: #5e5e5e;
 }
 
 .smarthint-news-content {
@@ -225,12 +265,75 @@ fieldset .busca {
 }
 
 .smarthint-news-products {
+  position: relative;
   display: flex;
   width: 100%;
 }
 
 .smarthint-news-products img {
   width: 90%;
+}
+
+.smarthint-news-products h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #5e5e5e;
+  width: 88%;
+}
+
+.price {
+  width: 100%;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.full-price {
+  color: #5e5e5e;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.new-price {
+  font-size: 20px;
+  margin: 0 6px;
+  color: var(--color-price-blue);
+  font-weight: 700;
+}
+
+.hover-position:hover {
+  opacity: 1;
+}
+
+.hover-position {
+  opacity: 0;
+  position: absolute;
+  bottom: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  transition: ease 0.3s;
+}
+
+.hover-position a {
+  width: 90%;
+  text-align: center;
+  height: 46px;
+  background-color: #14b36b;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: 0 0 10px;
+  padding-top: 16px;
+}
+
+.smarthint-news .slick-dots {
+  bottom: -40px !important;
 }
 
 /* MAIS VISTOS*/
@@ -245,6 +348,7 @@ fieldset .busca {
 }
 
 .smarthint-bestsellers-content {
+  position: relative;
   display: block;
   width: 100vw;
 }
