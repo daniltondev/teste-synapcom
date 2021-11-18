@@ -1,3 +1,41 @@
+/*USER ACTIONS DROP*/
+$('.user-enter').hover(
+  function () {
+    $('.drop-account').css('display', 'unset')
+  },
+  function () {
+    $('.drop-account').css('display', 'none')
+  }
+)
+
+$('.user-bag').hover(
+  function () {
+    $('.drop-bag').css('display', 'unset')
+  },
+  function () {
+    $('.drop-bag').css('display', 'none')
+  }
+)
+/* HOVER COMPRA RAPIDA DOS PRODUTOS*/
+
+$('.smarthint-news-products').hover(
+  function () {
+    $(this).children('.hover-position').css('opacity', '1')
+  },
+  function () {
+    $(this).children('.hover-position').css('opacity', '0')
+  }
+)
+
+$('.smarthint-bestsellers-products').hover(
+  function () {
+    $(this).children('.hover-position').css('opacity', '1')
+  },
+  function () {
+    $(this).children('.hover-position').css('opacity', '0')
+  }
+)
+
 /* SLICK FUNCTIONS */
 
 $('.banner-carrossel').slick({
@@ -13,7 +51,7 @@ $('.smarthint-news-content').slick({
   dots: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000
 })
 
@@ -21,7 +59,7 @@ $('.smarthint-bestsellers-content').slick({
   dots: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000
 })
 

@@ -75,6 +75,50 @@ header {
   align-items: center;
 }
 
+.drop-account {
+  background-color: #fff;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 130px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #5e5e5e;
+  box-shadow: 1px 1px 5px #0000003d;
+  display: none;
+}
+
+.drop-account a {
+  display: block;
+  color: inherit;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.drop-bag {
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  top: 42px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 260px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  color: #5e5e5e;
+  box-shadow: 1px 1px 5px #0000003d;
+  justify-content: center;
+  display: none;
+  padding-left: 25px;
+}
+
+.drop-bag a {
+  display: block;
+  color: inherit;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
 /*TOP HEADER SACOLA*/
 
 .user-bag {
@@ -109,18 +153,23 @@ header {
 /*BOTTON HEADER*/
 
 .botton-header {
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-start !important;
   align-items: center;
   background-color: #fff;
-  justify-content: center;
   width: 100vw;
   height: 70px;
-  margin-left: 82px;
-  margin-right: 82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 400;
+}
+
+.menu {
+  margin-left: 60px;
 }
 
 .menu div .arrow-menu {
-  margin: 0.5rem 1rem 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem;
 }
 
 .arrow-menu {
@@ -134,7 +183,7 @@ header {
 .sub-menu {
   display: flex;
   position: absolute;
-  left: 0;
+  left: 0px;
   background-color: #fff;
   width: 50%;
   min-width: 40%;
@@ -145,11 +194,14 @@ header {
 }
 
 .sub-menu-content-wrapper {
+  position: relative;
   display: flex;
+  padding-left: 2rem;
   align-items: center;
   min-width: 40%;
   height: auto;
   margin: 1rem;
+  justify-content: space-around;
 }
 
 .sub-menu-content-wrapper a {
@@ -158,10 +210,13 @@ header {
 }
 
 .sub-menu-content {
+  position: relative;
   display: inline-flex;
 }
 
 .sub-menu .sub-menu-col-n1 {
+  position: relative;
+  padding-left: 2.5rem;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -171,6 +226,7 @@ header {
 }
 
 .sub-menu .sub-menu-col-n2 {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -180,7 +236,9 @@ header {
 }
 
 .sub-menu .sub-menu-img {
-  margin-top: 15%;
+  margin-top: 15px;
+  right: 0;
+  margin-right: 100px;
 }
 
 #novidades {
@@ -211,46 +269,61 @@ header {
 .logo img {
   width: 200px;
   height: 45px;
+  margin-left: 25%;
 }
 
 /*BOTTON HEADER - SEARCH*/
 
 .search-box {
-  flex-basis: 35%;
+  flex-basis: 20%;
   display: inline-flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-left: 10%;
 }
 
 .search-box img {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
-  margin-top: 28px;
+  margin-right: 12px;
 }
 
-.search-box fieldset {
-  border: 0;
+fieldset {
+  margin-top: 12px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  height: 90%;
 }
 
 .search-box-content {
   width: 100%;
+  display: flex;
 }
 
-fieldset .busca {
-  display: inline-flex;
-  justify-content: center;
+.busca {
+  display: flex;
+  justify-content: left;
   align-items: center;
+  max-width: 100%;
 }
 
 .busca input {
   box-sizing: border-box;
-  width: 50%;
   border: none;
-  padding-left: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.busca input:focus {
+  box-shadow: 0 0 0 0;
+  outline: none;
+}
+
+.btn-search {
+  margin-top: 15px;
 }
 
 /*CARROSEL PRINCIPAL*/
@@ -381,10 +454,6 @@ fieldset .busca {
   margin: 0 6px;
   color: var(--color-price-blue);
   font-weight: 700;
-}
-
-.smarthint-news .hover-position:hover {
-  opacity: 1;
 }
 
 .smarthint-news .hover-position {
@@ -699,7 +768,7 @@ fieldset .busca {
 
 .footer-top-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1192px;
   width: 100%;
   margin: 40px auto;
@@ -747,6 +816,36 @@ fieldset .busca {
   line-height: 27px;
   font-weight: 400;
   margin: 0;
+}
+
+.footer-list h5 {
+  margin-top: 10px;
+}
+
+.footer-list-inline {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-top-group .footer-list-inline li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.security-type {
+  margin-top: 15px;
+}
+
+.security-type div {
+  display: inline;
+  margin-left: 10px;
+}
+
+.synapcom-footer-logo img {
+  border: 0;
+  padding: 0;
+  width: 180px;
+  height: 80px;
 }
 
 /*SWEET ALERT*/
