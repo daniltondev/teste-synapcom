@@ -67,7 +67,7 @@ console.log('tá aqui')
 
 //MENU
 
-$('.arrow-novidades').hover(
+$('.news').hover(
   function () {
     $('#novidades').css({ display: 'unset', 'margin-top': '45px' })
   },
@@ -76,7 +76,7 @@ $('.arrow-novidades').hover(
   }
 )
 
-$('.arrow-meninas').hover(
+$('.girls').hover(
   function () {
     $('#meninas').css({ display: 'unset', 'margin-top': '45px' })
   },
@@ -85,7 +85,7 @@ $('.arrow-meninas').hover(
   }
 )
 
-$('.arrow-meninos').hover(
+$('.boys').hover(
   function () {
     $('#meninos').css({ display: 'unset', 'margin-top': '45px' })
   },
@@ -94,7 +94,7 @@ $('.arrow-meninos').hover(
   }
 )
 
-$('.arrow-bebes').hover(
+$('.babys').hover(
   function () {
     $('#bebes').css({ display: 'unset', 'margin-top': '45px' })
   },
@@ -103,7 +103,7 @@ $('.arrow-bebes').hover(
   }
 )
 
-$('.arrow-marcas').hover(
+$('.brands').hover(
   function () {
     $('#marcas').css({ display: 'unset', 'margin-top': '45px' })
   },
@@ -112,7 +112,7 @@ $('.arrow-marcas').hover(
   }
 )
 
-$('.arrow-promocoes').hover(
+$('.promotion').hover(
   function () {
     $('#promocoes').css({ display: 'unset', 'margin-top': '45px' })
   },
